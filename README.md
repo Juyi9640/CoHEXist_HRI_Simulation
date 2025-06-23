@@ -1,6 +1,8 @@
 # CoHEXist_HRI_Simulation
 
-A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was created to evaluate industrial human-robot interactions (HRI). [actor_collisions][11] plugin allowed actor to have collision properties. [GMapping][4] + [AMCL][5] was selected as 2D LiDAR-based mapping and localization strategies due to its low computational load and high stability. The ROS [move_base][6] framework served as the core navigation system, employing the Dijkstra algorithm as global planner and Time Elastic Band ([TEB][7]) as local planner, and the costmap-based mechanism for obstacle avoidance. The [waterplus_map_tools][9] was used to enable robot waypoint navigation. [leg_tracker][8] package was used to detect People messages and the [social_navigation_layers][10] for social-aware navigation was tested.<br />
+A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was created to evaluate industrial human-robot interactions (HRI). The robot is described in [innok_heros_description][12], and the 3D-LiDAR simulator is taken from [velodyne_simulator][13].  The [actor_collisions][11] plugin allowed actor to have collision properties. [GMapping][4] + [AMCL][5] was selected as 2D LiDAR-based mapping and localization strategies due to its low computational load and high stability. The ROS [move_base][6] framework served as the core navigation system, employing the Dijkstra algorithm as global planner and Time Elastic Band ([TEB][7]) as local planner, and the costmap-based mechanism for obstacle avoidance. The [waterplus_map_tools][9] was used to enable robot waypoint navigation. [leg_tracker][8] package was used to detect People messages and the [social_navigation_layers][10] for social-aware navigation was tested. The Proxemiclayer incorporates social proxemic constraints, let the Innok maintaining appropriate interpersonal distances to actors. Video accelerated (3x).
+<br />
+
 
 ### System requirements
 [Ubuntu 20.04][1] and [ROS Noetic][2]
@@ -16,28 +18,13 @@ A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was cr
 [9]: https://github.com/6-robot/waterplus_map_tools                              "waterplus_map_tools"
 [10]: https://wiki.ros.org/social_navigation_layers                              "social_navigation_layers"
 [11]: https://github.com/JiangweiNEU/actor_collisions                            "actor_collisions"
+[12]: https://github.com/innokrobotics/innok_heros_description/tree/noetic       "innok_heros_description"
+[13]: https://github.com/lmark1/velodyne_simulator                               "velodyne_simulator"
 
 
-### Results
 
-Given the same goal pose (position and orientation extracted from RViz), the following images show the 
-qualitative comparison between the results: <br />
-(first: Jacobian transpose; second: Pseudoinverse; third: Damped least squares)
-
-<div align="center">
-  <p style="text-align:center;">IKs with the first goal pose</p>
-
-  <img src="gif folder/11.gif" width="300" alt="First GIF" />
-  <img src="gif folder/21.gif" width="300" alt="Second GIF" />
-  <img src="gif folder/31.gif" width="300" alt="Third GIF" />
-
-  <p style="text-align:center;">IKs with the second goal pose</p>
-
-  <img src="gif folder/12.gif" width="300" alt="First GIF" />
-  <img src="gif folder/22.gif" width="300" alt="Second GIF" />
-  <img src="gif folder/32.gif" width="300" alt="Third GIF" />
-
-</div>
+### Results Demo
+https://github.com/user-attachments/assets/cf5ba3d3-6c74-44ce-9d09-468e2f42f139
 
 
 
