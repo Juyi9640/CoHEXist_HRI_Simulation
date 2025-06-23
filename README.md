@@ -23,7 +23,7 @@ A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was cr
 
 
 
-### Results Demo (Video accelerated 3x)
+### Results Demo (video accelerated 3x)
 https://github.com/user-attachments/assets/cf5ba3d3-6c74-44ce-9d09-468e2f42f139
 
 
