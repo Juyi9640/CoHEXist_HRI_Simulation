@@ -1,6 +1,6 @@
 # CoHEXist_HRI_Simulation
 
-A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was created to evaluate industrial human-robot interactions (HRI). The robot is described in [innok_heros_description][12], and the 3D-LiDAR simulator is taken from [velodyne_simulator][13].  The [actor_collisions][11] plugin allowed actor to have collision properties. [GMapping][4] + [AMCL][5] was selected as 2D LiDAR-based mapping and localization strategies due to its low computational load and high stability. The ROS [move_base][6] framework served as the core navigation system, employing the Dijkstra algorithm as global planner and Time Elastic Band ([TEB][7]) as local planner, and the costmap-based mechanism for obstacle avoidance. The [waterplus_map_tools][9] was used to enable robot waypoint navigation. [leg_tracker][8] package was used to detect People messages and the [social_navigation_layers][10] for social-aware navigation was tested. The Proxemiclayer incorporates social proxemic constraints, let the Innok maintaining appropriate interpersonal distances to actors. Video accelerated (3x).
+A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was created to evaluate industrial human-robot interactions (HRI). The robot is described in [innok_heros_description][12], and the 3D-LiDAR simulator is taken from [velodyne_simulator][13].  The [actor_collisions][11] plugin allowed actor to have collision properties. [GMapping][4] + [AMCL][5] was selected as 2D LiDAR-based mapping and localization strategies due to its low computational load and high stability. The ROS [move_base][6] framework served as the core navigation system, employing the Dijkstra algorithm as global planner and Time Elastic Band ([TEB][7]) as local planner, and the costmap-based mechanism for obstacle avoidance. The [waterplus_map_tools][9] was used to enable robot waypoint navigation. [leg_tracker][8] package was used to detect People messages and the [social_navigation_layers][10] for social-aware navigation was tested. The Proxemiclayer incorporates social proxemic constraints, let the Innok maintaining appropriate interpersonal distances to actors.
 <br />
 
 
@@ -23,7 +23,7 @@ A Gazebo-based simulation environment replicating the [CoHEXist][3] setup was cr
 
 
 
-### Results Demo
+### Results Demo (Video accelerated 3x)
 https://github.com/user-attachments/assets/cf5ba3d3-6c74-44ce-9d09-468e2f42f139
 
 
